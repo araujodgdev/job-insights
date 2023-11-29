@@ -13,3 +13,6 @@ class ProcessJobs:
 
     def filter_by_multiple_criteria(self) -> List[dict]:
         pass
+
+
+# Iniciando o projeto
