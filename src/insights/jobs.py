@@ -17,7 +17,16 @@ class ProcessJobs:
             return list()
 
     def get_unique_job_types(self) -> List[str]:
-        pass
+        job_types = list()
+        for job in self.jobs_list:
+            if job['job_type'] not in job_types:
+                job_types.append(job['job_type'])
+        return job_types
 
     def filter_by_multiple_criteria(self) -> List[dict]:
         pass
+
+
+# test = ProcessJobs()
+# test.read('data/jobs.csv')
+# print(test.get_unique_job_types())
